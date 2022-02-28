@@ -11,10 +11,6 @@
     <script src="https://kit.fontawesome.com/ef4bda2c1c.js" crossorigin="anonymous"></script>
 
     <!-- Fonte -->
-    <!-- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,100;1,400&display=swap" rel="stylesheet"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,7 +63,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="container-fluid p-3 mb-2">
 
             <div class="card bg-secondary">
@@ -94,11 +90,11 @@
                         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(página
+                                    <a class="nav-link" href="#home">Home <span class="sr-only">(página
                                             atual)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
+                                    <a class="nav-link" href="#">Ouvidoria</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -106,10 +102,13 @@
                                         Opções
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Login</a>
-                                        <a class="dropdown-item" href="#">Logout</a>
+                                        <a class="dropdown-item" href="#"><span
+                                                class="fa-regular fa-circle-check"></span> Login</a>
+                                        <a class="dropdown-item" href="#"><span class="fa-solid fa-ban"></span>
+                                            Logout</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Sobre</a>
+                                        <a class="dropdown-item" href="#info"><span
+                                                class="fa-regular fa-circle-question"></span> Sobre</a>
                                     </div>
                                 </li>
 
@@ -117,7 +116,8 @@
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Pechinchas"
                                     aria-label="Pechinchas">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span
+                                        class="fa-brands fa-searchengin"></span> Pesquisar</button>
                             </form>
                         </div>
                     </nav>
@@ -138,12 +138,14 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
 
-        <div class="container-fluid px-0">
+        <div class="container-fluid px-0" id="destaques">
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <!-- imagem 01 -->
-                    <img class="d-block w-100" src="img/girafa.jpg" alt="Primeiro Slide">
+                    <a href="#">
+                        <img class="d-block w-100" src="img/girafa.jpg" alt="Primeiro Slide">
+                    </a>
 
                     <div class="carousel-caption d-md-block">
                         <div class="carousel-caption d-block d-sm-block d-md-none mb-3">
@@ -167,7 +169,9 @@
                 </div>
                 <div class="carousel-item">
                     <!-- imagem 02 -->
-                    <img class="d-block w-100" src="img/lago-peyto-canada.jpg" alt="Segundo Slide">
+                    <a href="#">
+                        <img class="d-block w-100" src="img/lago-peyto-canada.jpg" alt="Segundo Slide">
+                    </a>
                     <div class="carousel-caption d-md-block">
 
                         <div class="carousel-caption d-block d-sm-block d-md-none mb-3">
@@ -190,7 +194,9 @@
                 </div>
                 <div class="carousel-item">
                     <!-- imagem 03 -->
-                    <img class="d-block w-100" src="img/meeru-maldivas.jpg" alt="Terceiro Slide">
+                    <a href="#">
+                        <img class="d-block w-100" src="img/meeru-maldivas.jpg" alt="Terceiro Slide">
+                    </a>
                     <div class="carousel-caption d-md-block">
 
                         <div class="carousel-caption d-block d-sm-block d-md-none mb-3">
@@ -226,68 +232,77 @@
     </div>
 
     <!-- Cards dos planos 1 -->
-    <div class="container" style="margin-top: 100px;">
+    <div class="container" style="padding-top: 100px;" id="pechinchas">
         <h1 class="font-weight-bold text-center">Conheça nossos planos:</h1>
         <div class="row">
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/lago-peyto-canada.jpg" alt="Lago Peyto – Canadá">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Lago Peyto – Canadá</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Foi escolhido como o lugar mais bonito do planeta. Com água
+                                cristalina azul-turquesa alimentada pelas geleiras no alto das grandiosas Montanhosas
+                                Rochosas. O contraste entre a cor do lago e a floresta verde escuro na base das
+                                grandiosas
+                                montanhas nevadas tornam este lugar um dos destinos naturais mais procurados no Canadá.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/meeru-maldivas.jpg" alt="Ilha Meeru – Maldivas">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Ilha Meeru – Maldivas</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Um paraíso na Terra! As Maldivas, com suas centenas de ilhas escondem diversos tesouros
+                                naturais pontuados com areia fina e água azul cristalina. Entre elas está a Ilha Meeru a
+                                pouco mais de 50 quilômetros ao norte da capital Male, Meeru abriga um belo resort
+                                rodeado de bancos de
+                                areias, recifes e corais. Tudo com aquele mar com infinitos tons de azuis inconfundíveis
+                                que só as Maldivas têm. Se sonha viajar para lá, a hora é agora, Aproveite!
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/jurassic-coast.jpg" alt="Costa Jurássica – Inglaterra">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Costa Jurássica – Inglaterra</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                A Costa Jurássica é uma paisagem extremamente diversificada e bonita, sustentada por uma
+                                incrível geologia de importância global. Milhares de turistas frequentam esta região no
+                                sul da Inglaterra para explorar, caminhar e apreciar esta beleza que guarda a história
+                                de milhões de anos dos períodos geológicos Triássico, Jurássico e Cretáceo. A Costa,
+                                patrimônio mundial da Unesco, tem 150 km de extensão e corre ao longo do Canal da Mancha
+                                de Exmouth, em East Devon, a Studland Bay, em Dorset, a cerca de 250 km de distância de
+                                Londres.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -299,64 +314,78 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/yosemite.jpg"
+                            alt="Parque Nacional Yosemite – Estados Unidos">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Parque Nacional Yosemite – Estados Unidos</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Este outro Patrimônio Mundial fica na Califórnia, nos Estados Unidos. Um dos principais
+                                parques nacionais do país o Yosemite recebe anualmente cerca de três milhões de turistas
+                                e tem uma área de mais de 3 mil km². Os visitantes vão ao Parque para apreciar muita
+                                beleza natural. O Yosemite, pertinho de San Francisco, atrai os turistas devido aos
+                                desfiladeiros de granito, cascatas, lagos, bosques de sequoias gigantes e uma grande
+                                biodiversidade.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/lago-tekapo-nova-zelandia.jpg"
+                            alt="Lago Tekapo – Nova Zelândia">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Lago Tekapo – Nova Zelândia</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Na região central da ilha sul da Nova Zelândia, no coração do Mackenzie Country, fica o
+                                belo Lago Tekapo. Alimentado pelas águas que escorrem das geleiras das altas montanhas
+                                escarpas no entorno, o Lago Tekapo oferece bela paisagem e muito lazer aos turistas que
+                                podem aproveitar o visual para fazer caminhadas, passear de barco, nadar e até pescar
+                                salmão. O local fica a cerca de três horas de carro do aeroporto de Christchurch. É só
+                                seguir e pegar a famosa State Highway 8, a rota turística mais popular da Nova Zelândia.
                             </h6>
+                            <br>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/cataratas-niagara-falls-canada.jpg"
+                            alt="Cataratas do Niágara – Canadá">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Cataratas do Niágara – Canadá</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Bem na fronteira entre o Canadá e os Estados Unidos fica esta maravilha da natureza.
+                                Composta por três cachoeiras diferentes, as Cataratas do Niágara recebem cerca de 10
+                                milhões de turistas por ano. As cataratas chamam a atenção por sua beleza e pela
+                                quantidade de água: chega a 168 mil metros cúbicos nas épocas de cheia, despencando a
+                                alturas de em média 52 metros. O local fica a menos de 1 hora de viagem de Toronto.
+                                Lindas sem dúvida, está se perguntando pelas Cataratas do Iguaçu? Calma que já
+                                chegaremos lá!
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -368,64 +397,81 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/pais-gales-Snowdon.jpg" alt="Snowdon – País de Gales">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Snowdon – País de Gales</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Venha atravessar o Oceano Atlântico rumo ao Reino Unido. Snowdow é a montanha mais alta
+                                e
+                                terceira atração mais visitada do País de Gales. Todo o local forma o Parque Nacional de
+                                Snowdonia que recebe meio milhão de turistas todos os anos. O grande maciço tem 1.085
+                                metros de altura e suas paisagens são de tirar o fôlego. Lá do alto dá até para ver a
+                                Irlanda.
+
                             </h6>
+                            <br>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/Puerto-Princesa-filipinas.jpg"
+                            alt="Rio Subterrâneo Puerto Princesa – Filipinas">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Rio Subterrâneo Puerto Princesa – Filipinas</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Patrimônio Mundial da Unesco, o rio subterrâneo fica em um parque nacional a 80 km de
+                                Puerto Princesa, nas Filipinas. São ao todo 8 km de extensão navegando por águas
+                                cristalinas e incríveis formas rochosas nas cavernas. Uma experiência única. O Parque
+                                Nacional do Rio Subterrâneo de Puerto Princesa está localizado na Cordilheira de Saint
+                                Paul, na costa oeste da ilha, e recentemente foi escolhido como uma das Sete Maravilhas
+                                do mundo, na versão natureza.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <iframe class="card-img-top" width="820" height="461"
+                            src="https://www.youtube.com/embed/AK-6PEY2X2g" alt="Catedral de Mármore – Chile"
+                            title="Catedral de Mármore – Chile" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Catedral de Mármore – Chile</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                O Chile é uma terra de contrastes naturais. Ao norte o deserto mais árido do planeta e
+                                ao sul as geleiras e lagos da Patagônia. É no sul, no grande lago General Carrera, que
+                                estão localizadas as Capelas ou Catedral de Mármore, chamadas no Chile de Capillas de
+                                Mármol. A bela formação geológica tem mais de 6 mil anos, onde as camadas de mármore nas
+                                pedras calcáreas reverberam diferentes cores do carbonato de cálcio, do quartzo e da
+                                limonita presentes no local. Os passeios para lá saem de Puerto Rio Tranquilo que fica a
+                                220 km ao sul de Coyhaique, de onde há voos de Santiago.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -437,64 +483,74 @@
     <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/el-yunque-porto-rico.jpg"
+                            alt="Floresta Nacional de El Yunque – Porto Rico">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Floresta Nacional de El Yunque – Porto Rico </h4>
+                            <br>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                A Floresta Nacional de El Yunque tem 11.300 hectares e é uma das atrações mais visitadas
+                                em Porto Rico. Localizada no nordeste da ilha caribenha, a floresta conta com uma imensa
+                                biodiversidade. Ali é possível observar cerca de 240 espécies de plantas e uma variedade
+                                de pássaros e outras criaturas pequenas, incluindo a mascote local: o sapo coquí. Para
+                                curtir o passeio há tirolesa, cachoeiras e muitas trilhas para caminhada, são cerca de
+                                40 km de trilhas recreativas.
                             </h6>
+                            <br><br>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/aurora-boreal-islandia.jpg" alt="Aurora Boreal – Islândia">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Aurora Boreal – Islândia</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                este conjunto de luzes intensas, coloridas e que se movimentam no céu, pode ser avistada
+                                o ano todo na Islândia, mas a melhor época é de abril a setembro. O fenômeno pode ser
+                                visto em outros países, mas nesta ilha nórdica com a mistura de neve e terreno
+                                acidentado avistar estas cores no céu fica muito mais incrível.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm mt-5 mr-4">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/girafa.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/cataratas-do-iguacu.jpeg" alt="Cataratas do Iguaçu – Brasil">
                         <div class="card-body">
-                            <h4 class="card-title font-weight-bold">Título do card</h4>
+                            <h4 class="card-title font-weight-bold">Cataratas do Iguaçu – Brasil</h4>
                             <h6 class="card-text text-justify px-1 py-2">
-                                Zakouma é um refúgio relativamente seguro para as girafas de Cordofão: mais da metade da
-                                população mundial encontra-se aqui, então venha!
+                                Olha elas ai! As incríveis Cataratas do Iguaçu são um dos principais cartões postais
+                                tanto do Brasil como da Argentina, já que se dividem entre os dois países. Este
+                                patrimônio natural da humanidade tem cerca de 275 quedas de água no rio Iguaçu, que
+                                ficam na bacia hidrográfica do rio Paraná, em Foz do Iguaçu. São uma das maiores
+                                cataratas do mundo tanto em número de quedas e extensão quanto em volume de água, o que
+                                fazem dela um lugar único.
                             </h6>
                             <h6><span class="font-weight-bold">Cia Aérea:</span> Vá Com Deus</h6>
                             <h6><span class="font-weight-bold">Passagem:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Diária:</span> USS 000,00</h6>
                             <h6><span class="font-weight-bold">Combo:</span> USS 000,00</h6>
 
-                            <a href="#" class="fa-bounce btn btn-primary">Visitar</a>
+                            <a href="#" class="fa-bounce btn btn-primary">Venha Visitar</a>
                         </div>
                     </div>
                 </div>
@@ -504,14 +560,13 @@
 
     <!-- Cards dos planos -->
     <div class="container" style="margin-top: 100px;">
-        <h1 class="font-weight-bold text-center">Plano Especial:</h1>
+        <h1 class="font-weight-bold text-center">Oferta Especial:</h1>
         <div class="row">
 
             <div class="col-sm mt-5 mr-12">
-                <!-- Uma de três colunas -->
                 <div class="container-fluid mx-5 align-center" style="display: flex; flex-wrap: wrap;">
                     <div class="card mr-5">
-                        <img class="card-img-top" src="img/elephant-park.jpg" alt="Imagem de capa do card">
+                        <img class="card-img-top" src="img/elephant-park.jpg" alt="Safári na Africa">
                         <div class="card-body">
                             <h4 class="card-title font-weight-bold">Safári na Africa</h4>
                             <h6 class="card-text text-justify px-1 py-2">
@@ -533,7 +588,7 @@
 
 
                             <div class="d-block d-sm-block d-md-none">
-                                <a href="#" class=" fa-bounce btn btn-primary">Visitar</a>
+                                <a href="#" class=" fa-bounce btn btn-primary">Venha Visitar</a>
 
                             </div>
 
@@ -553,46 +608,73 @@
         </div>
     </div>
 
+
     <footer>
-
-        <!-- <div class="d-block d-sm-block d-md-none">
-            <div class="card-footer text-center my-4 mx-0">
-                tela média p menor
+        <div id="info" class="card text-center my-5 px-2 bg-warning">
+            <div class="card my-0 bg-warning p-2">
+                <ul class="ml-5 nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#destaques">Destaques</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#pechinchas">Pechinchas</a>
+                    </li>
+                </ul>
             </div>
+            <div class="card-body">
+                Turismonline.com © 2022 - Todos os direitos reservados
+                <div class="my-2">
+                    <lo>
+                        <li class="fa-layers fa-fw">
+                            <a href="https://t.me/rootsblackpower" target="_blank" title="Me dê oi no Telegram">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </li>
 
+                        <li class="fa-layers fa-fw">
+                            <a href="https://wa.me/5599992314238?text=Oi%20Eduardo,%20" target="_blank"
+                                title="Me dê um oi no WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+
+                        <li class="fa-layers fa-fw">
+                            <a href="https://pt-br.facebook.com/" target="_blank" title="FaceBook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li class="fa-layers fa-fw">
+                            <a href="https://www.youtube.com/channel/UC7rwtdOjFDeH44zNxrQy65w" target="_blank"
+                                title="Meu canal do YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+
+                        <li class="fa-layers fa-fw">
+                            <a href="https://github.com/Eduardo-Roots" target="_blank" title="Meu GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+
+                        <li class="fa-layers fa-fw">
+                            <a href="mailto:eduardo7589985@gmail.com?subject=Ajuda com o TurismOnline.com"
+                                target="_blank" title="Mande-nos um Email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="fa-layers-counter" style="background:Tomato">1,419</span>
+                            </a>
+                        </li>
+                    </lo>
+                </div>
+            </div>
         </div>
 
-        <div class="d-none d-md-block">
-            tela média p grande
-        </div> -->
-
-
-        <div class="card-footer text-center my-4 mx-0">
-            Turismonline.com © 2022 - Todos os direitos reservados
-            <div class="my-2">
-                <a href="https://t.me/rootsblackpower" target="_blank" title="Me dê oi no Telegram">
-                    <i class="fa-brands fa-telegram"></i>
-                </a>
-
-                <a href="https://wa.me/5599992314238?text=Oi%20Eduardo,%20" target="_blank"
-                    title="Me dê um oi no WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-                <a href="https://pt-br.facebook.com/" target="_blank" title="FaceBook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-
-                <a href="https://www.youtube.com/channel/UC7rwtdOjFDeH44zNxrQy65w" target="_blank"
-                    title="Meu canal do YouTube">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-
-                <a href="https://github.com/Eduardo-Roots" target="_blank" title="Meu GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-        </div>
     </footer>
 
 </body>
